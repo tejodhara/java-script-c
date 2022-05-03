@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #search{
+            padding: 20px;border: 2px solid white; text-align: center;
+   
+        }
+        #in{border-radius: 8px; width: 500px;height: 25px;}
+        .d{display: flex; margin: 10px;}
+        .d1,.d2,.d3{
+            border: 1px solid red;
+            width: 250px;
+            height: 250px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="search">
+            <input id="in" type="text" spaceholder="search movie">
+            <button onclick="movie()">search</button>
+        </div>
+    </nav>
+    <div class="d">
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+    </div>
+
+    <table id="user"></table>
+    
+
+
+
+    <script>
+        async function movie(){
+            let search = document.getElementById("in")
+            let name = await fetch(`http://www.omdbapi.com/?s=${search}&apikey=f056e2f7`)
+            
+            let x = await Response().json()
+            console.log("x",x);
+        }
+    </script>
+</body>
+</html>

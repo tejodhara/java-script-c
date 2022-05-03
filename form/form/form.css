@@ -1,0 +1,4 @@
+#emptyUsername,#invalidUsername,#emptyPassword,#invalidPassword{
+    display: none;
+    color: red
+}

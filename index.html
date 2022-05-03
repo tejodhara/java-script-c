@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //primitive datatype
+        var fName = "sai"
+        console.log("fName: ", fName)
+        var num = 10
+        console.log("Number: ", num)
+        var isMarried = true
+        console.log("isMarried: ", isMarried)
+        var hobbies = null
+        console.log("hobbies: ", hobbies)
+
+        var udf;
+        console.log("udf : ",udf)
+        
+        //non primitive datatype
+        //array 
+        var arr1 = ['alia',25,true,null,undefined,,];
+        console.log(arr1);
+
+        console.log("Array name:"+arr1[0]);
+        console.log("Array age:"+arr1[1]);
+        console.log("Array isMarried:"+arr1[2]);
+        console.log("Array hobbies:"+arr1[3]);
+        console.log("Array humer:"+arr1[4]);
+        console.log("Array brain:"+arr1[5]);
+
+        //object
+        var person = {
+            fName:"Ajay",
+            lName:"k",
+            age:18,
+            isMarried: true,
+            fullName:function(){
+                return person.fName +" "+ this.lName;
+            }
+        }
+        console.log("person object: ", person);
+        console.log("person fName: ", person.fName);
+        console.log("person age: ", person.age);
+        console.log("person isMarried: ", person.isMarried);
+        console.log("person fName: ", person.fullName());
+        
+        //object by using new keyword
+        
+        var car = new Object()
+        car.name = "Maruti";
+        car.price = 4000;
+        car.color = "White"
+        car.year = 2020
+        console.log("car name: ", car.name)
+        console.log("car price: ", car.price)
+        console.log("car color: ", car["color"])
+
+
+    </script>
+</body>
+</html>

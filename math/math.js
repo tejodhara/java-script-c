@@ -1,0 +1,12 @@
+console.log(Math.round(5.8))
+console.log(Math.abs(-5.2))
+console.log(Math.ceil(5.2))
+console.log(Math.floor(5.2))
+console.log(Math.min(5,2,3,6,7))
+console.log(Math.max(5,2,3,6,7))
+console.log(Math.sqrt(64))
+console.log(Math.pow(2,8))
+console.log(Math.random())
+
+console.log(Math.round(Math.random()*100))
+console.log(Math.ceil(Math.random()*100)+1)

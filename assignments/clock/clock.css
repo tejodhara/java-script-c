@@ -1,0 +1,31 @@
+#clock {
+    display: flex;
+    font-size: 120px;
+    text-align: center;
+    
+}
+
+#hourmin{
+    background: black;
+    color: white;
+    width: 50%;
+    height: 450px;
+    font-size: 250px;
+    padding-top: 195px;
+}
+
+#seconds{
+    background: greenyellow;
+    color: white;
+    width: 50%;
+    height: 450px;
+    font-size: 410px;
+    padding-top: 195px;
+    
+}
+#sec{
+    z-index: 100%;
+    position: relative;
+    transform: translate(-150px,20px);
+    font-size: 50px;
+}
